@@ -13,24 +13,25 @@ Dokumen ini berisi panduan untuk menjalankan dashboard yang telah dibuat untuk p
 ## Cara Menjalankan Dashboard
 ---
 ### Buat dan Masuk ke Virtual Environment
-
+```
 cd submission
 pipenv install
 pipenv shell
 pip install -r requirements.txt
-
+```
 ---
 
 ### Menggunakan Anaconda
 
+```
 conda create --name bike-ds python=3.9
 conda activate bike-ds
 pip install -r requirements.txt
-
----
+```
 
 ### Menjalankan Aplikasi Streamlit
 
+```
 cd dashboard
 streamlit run dashboard.py
-
+```
