@@ -1,67 +1,36 @@
 # Dashboard Penyewaan Sepeda 🚲
 
 Dokumen ini berisi panduan untuk menjalankan dashboard yang telah dibuat untuk projek akhir dalam course analisis data menggunakan python. Analisis ini bertujuan untuk memahami pola penyewaan sepeda berdasarkan faktor waktu dan jenis hari (hari kerja vs akhir pekan). Data yang digunakan mencakup variabel-variabel seperti tanggal, musim, kondisi cuaca, dan jumlah penyewaan sepeda harian.
+---
+## Insight 
 
+1. Hari dengan jumlah penyewaan tertinggi: Penyewaan sepeda tertinggi terjadi pada hari kerja dengan cuaca cerah, terutama di musim panas.
+2. Perbandingan penyewaan antara hari kerja dan akhir pekan: Jumlah penyewaan sepeda cenderung lebih tinggi pada hari kerja dibandingkan akhir pekan, terutama pada jam sibuk pagi dan sore hari.
 
 
 ---
 
-## 📌 Persiapan Lingkungan
+## Cara Menjalankan Dashboard
+---
+### Buat dan Masuk ke Virtual Environment
 
-### 1️⃣ Menggunakan Anaconda
-
-```sh
-conda create --name bike-share python=3.9
-conda activate bike-share
+cd submission
+pipenv install
+pipenv shell
 pip install -r requirements.txt
-```
 
-### 2️⃣ Menggunakan Terminal/Shell
+---
 
-```sh
-mkdir proyek_dashboard
-cd proyek_dashboard
-python -m venv env
-source env/bin/activate  # Untuk Linux & Mac
-env\Scripts\activate  # Untuk Windows
+### Menggunakan Anaconda
+
+conda create --name bike-ds python=3.9
+conda activate bike-ds
 pip install -r requirements.txt
-```
 
 ---
 
-## 🚀 Menjalankan Aplikasi Streamlit
+### Menjalankan Aplikasi Streamlit
 
-```sh
-streamlit run dashboard/dashboard.py
-```
-
----
-
-## 📂 Struktur Folder
-
-```
-submission/
-│── dashboard/
-│   ├── dashboard.py
-│   ├── main_data.csv
-│── data/
-│   ├── day.csv
-│   ├── hour.csv
-│── notebook.ipynb
-│── requirements.txt
-│── README.md
-```
-
-Pastikan semua file dan folder sudah sesuai dengan struktur di atas sebelum menjalankan aplikasi.
-
----
-
-## 🔗 Link Deployment
-
-Jika dashboard sudah dideploy, tambahkan link di bawah ini:
-[🚀 Buka Dashboard](URL_DASHBOARD_KAMU)
-
----
-
-Semoga bermanfaat! 🎉
+cd dashboard
+streamlit run dashboard.py
 
