@@ -1,15 +1,19 @@
 # Dashboard Penyewaan Sepeda 🚲
 
-Dokumen ini berisi panduan untuk menjalankan dashboard yang telah dibuat untuk projek akhir dalam course analisis data menggunakan python. Analisis ini bertujuan untuk memahami pola penyewaan sepeda berdasarkan faktor waktu dan jenis hari (hari kerja vs akhir pekan). Data yang digunakan mencakup variabel-variabel seperti tanggal, musim, kondisi cuaca, dan jumlah penyewaan sepeda harian.
----
-## Insight 
-
-1. Hari dengan jumlah penyewaan tertinggi: Penyewaan sepeda tertinggi terjadi pada hari kerja dengan cuaca cerah, terutama di musim panas.
-2. Perbandingan penyewaan antara hari kerja dan akhir pekan: Jumlah penyewaan sepeda cenderung lebih tinggi pada hari kerja dibandingkan akhir pekan, terutama pada jam sibuk pagi dan sore hari.
-
+Dokumen ini berisi panduan untuk menjalankan dashboard interaktif yang dibuat untuk menganalisis faktor-faktor yang memengaruhi penyewaan sepeda. Analisis ini bertujuan untuk memahami pola penyewaan sepeda berdasarkan faktor cuaca dan musim.
 
 ---
+## Insight
 
+1. **Faktor Cuaca di Setiap Bulan pada Tahun 2012:**
+   - Cuaca cerah dan suhu yang lebih hangat cenderung meningkatkan jumlah penyewaan sepeda.
+   - Bulan-bulan musim panas memiliki rata-rata penyewaan yang lebih tinggi dibandingkan bulan lainnya.
+   
+2. **Pola Penyewaan Sepeda Berdasarkan Musim dan Kondisi Cuaca:**
+   - Penyewaan sepeda meningkat di musim panas dan menurun di musim dingin.
+   - Kondisi cuaca yang buruk seperti hujan atau salju menyebabkan penurunan signifikan dalam jumlah penyewaan.
+
+---
 ## Cara Menjalankan Dashboard
 ---
 ### Buat dan Masuk ke Virtual Environment
@@ -22,7 +26,6 @@ pip install -r requirements.txt
 ---
 
 ### Menggunakan Anaconda
-
 ```
 conda create --name bike-ds python=3.9
 conda activate bike-ds
@@ -30,8 +33,8 @@ pip install -r requirements.txt
 ```
 
 ### Menjalankan Aplikasi Streamlit
-
 ```
 cd dashboard
 streamlit run dashboard.py
 ```
+
